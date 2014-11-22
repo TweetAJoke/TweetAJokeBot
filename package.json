@@ -1,0 +1,14 @@
+{
+  "name": "TweetAJoke",
+  "version": "0.0.1",
+  "description": "The best Twitter Bot ever. By the #SWLille Hardcore Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SWLillHcXTeam",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}
