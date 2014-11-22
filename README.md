@@ -7,3 +7,11 @@
 ## Local server
 
 	node index.js
+
+## Config
+
+You can access all the variables defined in the config file this way
+    
+    config.get('Twitter.consumer_key')
+
+Edit the .env file like shown in .env.sample and add the secret settings in it

@@ -4,6 +4,10 @@ var request     = require('request').defaults({ encoding: null });
 var bodyParser  = require('body-parser');
 var path        = require('path');
 
+var dotenv      = require('dotenv');
+dotenv.load();
+
+var config      = require('config');
 
 // Application configuration
 app.use(bodyParser.json());
