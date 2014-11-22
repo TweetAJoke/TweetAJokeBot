@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= TweetAJoke
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+
+  body
+    header.header
+      h1.brand
+        | TweetAJoke
+
+    .content.container
+      block content
+
+    block javascripts
