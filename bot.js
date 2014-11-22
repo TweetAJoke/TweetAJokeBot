@@ -22,6 +22,18 @@ stream.on('tweet', function (tweet) {
     return true;
   }
 
+  if(tweet.user.default_profile_image) {
+    var tweet_content = '@' + tweet.user.screen_name + ' Coucou tête d\'oeuf !!! #swLille';
+    twitter.post(tweet_content, null, tweet.id_str, function (error, response, body) {
+      if (error) {
+        console.error(error);
+      }
+      else {
+        console.log(tweet_content);
+      }
+    });
+  }
+
   var tweet_content;
   async.waterfall([
     function (callback) {
