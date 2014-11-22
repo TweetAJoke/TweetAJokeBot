@@ -2,4 +2,4 @@ giphy:
   # Public beta key from https://github.com/giphy/GiphyAPI#parameters
   api_key: dc6zaTOxFJmzC
 chucknorris:
-  mentors: ['@cyril_lakech', '@yannirbah', '@gierschv', '@Tordiann', '@TheDamfr']
+  mentors: ['@cyril_lakech', '@yannirbah', '@gierschv', '@Todiann', '@TheDamfr']
