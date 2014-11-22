@@ -4,7 +4,7 @@
   "description": "The best Twitter Bot ever. By the #SWLille Hardcore Team",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "SWLillHcXTeam",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "path": "^0.4.9",
     "request": "~2.48.0",
     "twit": "~1.1.18"
+  },
+  "devDependencies": {
+    "mocha": "0.3.x"
   }
 }
