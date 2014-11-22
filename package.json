@@ -9,6 +9,7 @@
   "author": "SWLillHcXTeam",
   "license": "ISC",
   "dependencies": {
-    "twit": "~1.1.18"
+    "twit": "~1.1.18",
+    "request": "~2.48.0"
   }
 }
