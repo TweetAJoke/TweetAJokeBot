@@ -2,3 +2,5 @@ language: node_js
 node_js:
   - "0.11"
   - "0.10"
+notifications:
+  slack: tweetajoke:3rGJce61nijOmXDYBWTbt5jc
