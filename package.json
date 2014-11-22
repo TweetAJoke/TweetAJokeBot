@@ -9,10 +9,12 @@
   "author": "SWLillHcXTeam",
   "license": "ISC",
   "dependencies": {
-    "twit": "~1.1.18",
-    "request": "~2.48.0"
     "body-parser": "^1.9.3",
     "express": "^4.10.2",
-    "jade": "^1.7.0"
+    "jade": "^1.7.0",
+    "js": "^0.1.0",
+    "path": "^0.4.9",
+    "request": "~2.48.0",
+    "twit": "~1.1.18"
   }
 }
