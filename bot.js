@@ -94,7 +94,8 @@ stream.on('tweet', function (tweet) {
           tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
           tweet.text.toLowerCase().indexOf('#cat') >= 0||
           tweet.text.toLowerCase().indexOf('#chatoune') >= 0) {
-        if(tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
+        if(Math.round(Math.random() * 10) % 2 ||
+            tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
             tweet.text.toLowerCase().indexOf('#cat') >= 0||
             tweet.text.toLowerCase().indexOf('#chatoune') >= 0) {
             thecat(users, callback);
