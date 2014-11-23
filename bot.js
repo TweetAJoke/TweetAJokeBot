@@ -22,7 +22,8 @@ stream.on('tweet', function (tweet) {
     return true;
   }
 
-  if(tweet.user.default_profile_image) {
+  // Easter egg
+  if (tweet.user.default_profile_image) {
     var tweet_content = '@' + tweet.user.screen_name + ' Coucou tête d\'oeuf !!! #swLille';
     twitter.post(tweet_content, null, tweet.id_str, function (error, response, body) {
       if (error) {
@@ -34,13 +35,19 @@ stream.on('tweet', function (tweet) {
     });
   }
 
+  // Mentions
+  var users = [];
+  for (var i = 0; i < tweet.entities.user_mentions.length; i++) {
+    users.push(tweet.entities.user_mentions[i].screen_name);
+  }
+
   var tweet_content;
   async.waterfall([
     function (callback) {
       if (Math.round(Math.random() * 10) % 2 ||
           tweet.text.toLowerCase().indexOf('#kitten') >= 0 ||
           tweet.text.toLowerCase().indexOf('#chaton') >= 0) {
-        kitten(callback);
+        kitten(users, callback);
       }
       else {
         chucknorris(callback);
