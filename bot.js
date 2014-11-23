@@ -45,7 +45,7 @@ stream.on('tweet', function (tweet) {
       }
     },
     function (content, image, callback) {
-      tweet_content = '@' + tweet.user.screen_name + ' ' + content + ' #swLille';
+      tweet_content = '@' + tweet.user.screen_name + ' ' + content + ' #5WLille';
       twitter.post(tweet_content, image, tweet.id_str, callback);
     }
   ], function (error, response, body) {
