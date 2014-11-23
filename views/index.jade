@@ -1,4 +1,31 @@
 extends layout
 
 block content
-  h2 Ride On Babe !!!!
+  #post.post
+    .post-photo
+      img
+    .post-text
+      | {{tweet}}
+    .post-trigger
+      {{trigger}}
+
+  .stats
+
+  script.
+    $( document ).ready(function() {
+      var socket = io();
+
+      $(".post-photo > img").attr('src', "https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/TheDamfr.jpg");
+      $(".post-text").html("@haroldzouari The quickest way to a man's heart is with @TheDamfr ' fist. #MentorFacts #5WLille");
+      $(".post-trigger").html("@haroldzouari");
+
+      socket.on('tweet', function(response){
+        $(".post").fadeOut(1000, function() {
+            $(".post-photo > img").attr('src', '');
+            $(".post-photo > img").attr('src', response.image);
+            $(".post-text").html(response.message);
+            $(".post-trigger").html("@SWLilleDreamTeam");
+            $(".post").fadeIn(1000);
+          });
+      });
+    });
