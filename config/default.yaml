@@ -12,8 +12,9 @@ chucknorris:
     - '@Judith_Kh'
 
   pictures:
-    TheDamfr: http://i.imgur.com/VM4Qy5v.jpg
-    yannirbah: http://i.imgur.com/HNBaJkj.jpg
+    TheDamfr: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/TheDamfr.jpg
+    yannirbah: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/yannirbah.jpg
+    cyril_lakech: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/cyril_lakech.jpg
 
 kitten:
   messages:
