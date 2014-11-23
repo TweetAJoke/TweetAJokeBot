@@ -37,11 +37,13 @@ stream.on('tweet', function (tweet) {
   var tweet_content;
   async.waterfall([
     function (callback) {
-      if (Math.round(Math.random() * 10) % 2) {
-        chucknorris(callback);
+      if (Math.round(Math.random() * 10) % 2 ||
+          tweet.text.toLowerCase().indexOf('#kitten') >= 0 ||
+          tweet.text.toLowerCase().indexOf('#chaton') >= 0) {
+        kitten(callback);
       }
       else {
-        kitten(callback);
+        chucknorris(callback);
       }
     },
     function (content, image, callback) {
