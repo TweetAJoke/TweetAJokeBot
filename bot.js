@@ -37,7 +37,7 @@ stream.on('tweet', function (tweet) {
   var tweet_content;
   async.waterfall([
     function (callback) {
-      if (Math.round(Math.random() * 10) % 3) {
+      if (Math.round(Math.random() * 10) % 2) {
         chucknorris(callback);
       }
       else {
