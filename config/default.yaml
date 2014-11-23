@@ -10,11 +10,14 @@ chucknorris:
     - '@Todiann'
     - '@TheDamfr'
     - '@Judith_Kh'
+    - '@mthiriez'
 
   pictures:
     TheDamfr: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/TheDamfr.jpg
     yannirbah: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/yannirbah.jpg
     cyril_lakech: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/cyril_lakech.jpg
+    mthiriez: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/mthiriez.jpg
+    gierschv: https://raw.githubusercontent.com/TweetAJoke/TweetAJokeBot/master/medias/gierschv.jpg
 
 kitten:
   messages:
