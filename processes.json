@@ -1,0 +1,7 @@
+[{
+  "name"      : "node",
+  "script"    : "bot.js",
+  "env"       : {
+      "PORT"  : 80
+  }
+}]
