@@ -4,3 +4,4 @@ node_modules/
 *.iml
 .DS_Store
 config/dev.yaml
+newrelic_agent.log
