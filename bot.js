@@ -88,15 +88,19 @@ stream.on('tweet', function (tweet) {
   var tweet_content;
   async.waterfall([
     function (callback) {
-      if (Math.round(Math.random() * 10) % 2) {
-          if(tweet.text.toLowerCase().indexOf('#kitten') >= 0 ||
-              tweet.text.toLowerCase().indexOf('#chaton') >= 0) {
-              kitten(users, callback);
-          } else if(tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
-              tweet.text.toLowerCase().indexOf('#cat') >= 0||
-              tweet.text.toLowerCase().indexOf('#chatoune') >= 0) {
-              thecat(users, callback);
-          }
+      if (Math.round(Math.random() * 10) % 2 ||
+          tweet.text.toLowerCase().indexOf('#kitten') >= 0 ||
+          tweet.text.toLowerCase().indexOf('#chaton') >= 0 ||
+          tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
+          tweet.text.toLowerCase().indexOf('#cat') >= 0||
+          tweet.text.toLowerCase().indexOf('#chatoune') >= 0) {
+        if(tweet.text.toLowerCase().indexOf('#thecat') >= 0 ||
+            tweet.text.toLowerCase().indexOf('#cat') >= 0||
+            tweet.text.toLowerCase().indexOf('#chatoune') >= 0) {
+            thecat(users, callback);
+        } else {
+            kitten(users, callback);
+        }
       }
       else {
         chucknorris(callback);
